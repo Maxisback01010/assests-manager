@@ -52,4 +52,21 @@ public class House {
     public void setLotSize(int lotSize) {
         this.lotSize = lotSize;
     }
+    @Override
+    public double getValue() {
+
+        double valuePerFoot = 0;
+
+        if (condition == 1) {
+            valuePerFoot = 180;
+        } else if (condition == 2) {
+            valuePerFoot = 130;
+        } else if (condition == 3) {
+            valuePerFoot = 90;
+        } else if (condition == 4) {
+            valuePerFoot = 80;
+        }
+
+        return (squareFoot * valuePerFoot) + (lotSize * 0.25);
+    }
 }
