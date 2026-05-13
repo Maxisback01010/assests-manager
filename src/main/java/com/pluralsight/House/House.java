@@ -1,6 +1,6 @@
 package com.pluralsight.House;
 
-public class House {
+public class House extends Asset {
 
 
     private String address;
@@ -52,6 +52,7 @@ public class House {
     public void setLotSize(int lotSize) {
         this.lotSize = lotSize;
     }
+    //overide get value
     @Override
     public double getValue() {
 
