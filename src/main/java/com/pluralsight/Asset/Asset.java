@@ -1,6 +1,7 @@
 package com.pluralsight.Asset;
 
 public class Asset {
+
     private String description;
     private String dateAcquired;
     private double originalCost;
@@ -31,7 +32,7 @@ public class Asset {
     public double getOriginalCost() {
         return originalCost;
     }
-
+    //get value method
     public void setOriginalCost(double originalCost) {
         this.originalCost = originalCost;
     }
